@@ -14,6 +14,9 @@ import { SeccionSlider } from "./components/SeccionSlider"
 import { Slider } from "./components/Slider"
 import { SeccionInfoRecetas } from "./components/SeccionInfoRecetas"
 import { GaleriaImagenes } from "./components/GaleriaImagenes"
+import { SeccionRecientes } from "./components/SeccionRecientes"
+import { RedesFooter } from "./components/RedesFooter"
+import { Footer } from "./components/Footer"
 
 /* Imagenes */
 import Receta2 from './assets/img/Receta2.jpg'
@@ -118,6 +121,17 @@ function App() {
             </div>
         </div>
 
+        <div className="bg-white w-full flex justify-center items-center mt-10">
+            <SeccionRecientes/>
+        </div>
+
+        <div className="bg-black w-full h-20 text-white p-2 flex items-center justify-center mx-auto">
+            <RedesFooter />
+        </div>
+
+        <div className="bg-black w-full h-20 text-white p-2 flex items-center justify-center mx-auto text-center">
+            <Footer/>
+        </div>
     </div>
     </>
   )
